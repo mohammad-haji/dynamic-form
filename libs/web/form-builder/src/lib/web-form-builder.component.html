@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-12">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Dynamic Form Demo</a>
+        </div>
+      </nav>
+    </div>
+    <div class="col-sm-12">
+      <form-builder
+        [form]="form"
+        [formModel]="formModel"
+        [errors]="errors"
+        [disabled]="disabled">
+      </form-builder>
+      <button class="btn btn-primary mt-2" (click)="onShowFormDataClick()">log values</button>
+    </div>
+
+    <div class="card mt-4 col-sm-6">
+      <div class="card-body">
+        <pre>{{output|json}}</pre>
+      </div>
+    </div>
+
+  </div>
+</div>

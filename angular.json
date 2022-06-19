@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "dynamic-form": "apps/dynamic-form",
+    "dynamic-form-e2e": "apps/dynamic-form-e2e",
+    "form-builder": "libs/form-builder",
+    "web-form-builder": "libs/web/form-builder"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/dynamic-form/src",
+  "prefix": "bugloos",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/dynamic-form",
+        "index": "apps/dynamic-form/src/index.html",
+        "main": "apps/dynamic-form/src/main.ts",
+        "polyfills": "apps/dynamic-form/src/polyfills.ts",
+        "tsConfig": "apps/dynamic-form/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/dynamic-form/src/favicon.ico",
+          "apps/dynamic-form/src/assets"
+        ],
+        "styles": [
+          "apps/dynamic-form/src/styles.scss",
+          "node_modules/bootstrap/dist/css/bootstrap.css"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/dynamic-form/src/environments/environment.ts",
+              "with": "apps/dynamic-form/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "dynamic-form:build:production"
+        },
+        "development": {
+          "browserTarget": "dynamic-form:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "dynamic-form:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/dynamic-form/**/*.ts",
+          "apps/dynamic-form/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/dynamic-form"
+      ],
+      "options": {
+        "jestConfig": "apps/dynamic-form/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
