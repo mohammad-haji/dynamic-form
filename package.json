@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "release": "standard-version",
-    "commit": "npx git-cz"
+    "commit": "npx cz"
   },
   "private": true,
   "dependencies": {
