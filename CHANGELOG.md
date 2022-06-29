@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/mohammad-haji/dynamic-form/compare/v0.0.1...v0.0.2) (2022-06-29)
+
+
+### Features
+
+* add standard-version module ([52dc123](https://github.com/mohammad-haji/dynamic-form/commit/52dc1232e25b26ddcf91f9e6a3eb30d5cf26be07))
+
 ### 0.0.1 (2022-06-29)
 
 
