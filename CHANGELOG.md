@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/mohammad-haji/dynamic-form/compare/v0.0.2...v0.0.3) (2022-07-06)
+
+
+### Features
+
+* add new css class ([8c02808](https://github.com/mohammad-haji/dynamic-form/commit/8c0280849d64c3d5a03d9de767aa08c83c2a5e2a))
+
 ### [0.0.2](https://github.com/mohammad-haji/dynamic-form/compare/v0.0.1...v0.0.2) (2022-06-29)
 
 
